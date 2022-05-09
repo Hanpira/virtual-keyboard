@@ -1,0 +1,67 @@
+:root {
+    --light-keyboard-color: #98d5c1;
+    --dark-keyboard-color: #6b9292;
+}
+
+.keyboard__keys {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: var(--dark-keyboard-color);
+}
+
+.keyboard__key {
+    width: 5%;
+    max-width: 90px;
+    height: 50px;
+    margin: 4px;
+    padding: 2px;
+    border: 1px solid var(--dark-keyboard-color);
+    border-radius: 5px;
+    background-color: var(--light-keyboard-color);
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.keyboard__key:active {
+    background-color: var(--dark-keyboard-color);
+    color: var(--light-keyboard-color);
+}
+
+.keyboard__key-wide {
+    width: 10%;
+}
+
+.keyboard__key-extra-wide {
+    width: 40%;
+    max-width: 220px;
+}
+
+.keyboard__key-activatable::after {
+    content: "";
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+.keyboard__key-active::after {
+    background-color: #ffffff;
+}
+
+.keyboard__key-dark {
+    background-color: var(--dark-keyboard-color);
+}
+
+.keyboard__img {
+    width: 30px;
+}
