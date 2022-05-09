@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Arial';
+    src: url("../assets/fonts/arial/arial-regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url("../assets/fonts/arial/arial-bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url("../assets/fonts/georgia/georgia-regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url("../assets/fonts/georgia/georgia-bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --light-color: #7fffd4;
+    --dark-color: #357676;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--light-color);
+    overflow-x: hidden;
+}
+
+header {
+    margin: 0 auto;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: var(--dark-color);
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.keyboard__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 20px 20px;
+}
+
+.keyboard__about {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    color: var(--dark-color);
+}
+
+.keyboard__textarea {
+    width: 500px;
+    height: 100px;
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+}
+
+.keyboard {
+    width: 80%;
+    margin-top: 25px;
+    padding: 0px 20px;
+    background-color: var(--dark-color);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: 0.4s;
+    height: 300px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--dark-color);
+    height: 50px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: var(--light-color);
+}
+
+.logo {
+    height: 30px;
+}
